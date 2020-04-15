@@ -130,26 +130,26 @@ to convert the payload back to a binary for us.
 """)
 
 webattack_text = ("""
-The Web Attack module is a unique way of utilizing multiple web-based attacks in order to compromise the intended victim.
-[Web攻击模块是一种利用多种基于Web的攻击来攻击目标的独特方式。]
-The """ + bcolors.BOLD + """Java Applet Attack""" + bcolors.ENDC + """ method will spoof a Java Certificate and deliver a metasploit based payload. Uses a customized java applet created by Thomas Werth to deliver the payload.
-[方法会欺骗一个Java证书，并交付一个基于metasploit的有效负载。使用由Thomas Werth创建的自定义java applet来交付负载。]
-The """ + bcolors.BOLD + """Metasploit Browser Exploit""" + bcolors.ENDC + """ method will utilize select Metasploit browser exploits through an iframe and deliver a Metasploit payload.
-[方法将通过iframe利用select Metasploit浏览器，并交付Metasploit有效负载。]
-The """ + bcolors.BOLD + """Credential Harvester""" + bcolors.ENDC + """ method will utilize web cloning of a web- site that has a username and password field and harvest all the information posted to the website.
-[方法将利用具有用户名和密码字段的网站的web克隆，并获取发布到网站的所有信息。]
-The """ + bcolors.BOLD + """TabNabbing""" + bcolors.ENDC + """ method will wait for a user to move to a different tab, then refresh the page to something different.
-[方法将等待用户移动到不同的选项卡，然后刷新页面到不同的地方。]
-The """ + bcolors.BOLD + """Web-Jacking Attack""" + bcolors.ENDC + """ method was introduced by white_sheep, emgent. This method utilizes iframe replacements to make the highlighted URL link to appear legitimate however when clicked a window pops up then is replaced with the malicious link. You can edit the link replacement settings in the set_config if its too slow/fast.
-[此方法使用iframe替换使突出显示的URL链接显示为合法，但是当单击一个窗口时弹出的链接将被恶意链接替换。如果速度太慢/太快，可以在set_config中编辑链接替换设置。]
-The """ + bcolors.BOLD + """Multi-Attack""" + bcolors.ENDC + """ method will add a combination of attacks through the web attack menu. For example you can utilize the Java Applet, Metasploit Browser, Credential Harvester/Tabnabbing all at once to see which is successful.
-[方法将通过web攻击菜单添加攻击组合。例如，您可以同时使用Java Applet、Metasploit浏览器、凭证收割机/Tabnabbing来查看哪个是成功的。]
-The """ + bcolors.BOLD + """HTA Attack""" + bcolors.ENDC + """ method will allow you to clone a site and perform powershell injection through HTA files which can be used for Windows-based powershell exploitation through the browser.
-[方法将允许您克隆一个站点，并通过HTA文件执行powershell注入，HTA文件可用于通过浏览器进行基于windows的powershell开发。]
+The Web Attack module is a unique way of utilizing multiple web-based attacks in order to compromise the intended victim.\n\n
+[Web攻击模块是一种利用多种基于Web的攻击来攻击目标的独特方式。]\n
+The """ + bcolors.BOLD + """Java Applet Attack""" + bcolors.ENDC + """ method will spoof a Java Certificate and deliver a metasploit based payload. Uses a customized java applet created by Thomas Werth to deliver the payload.\n
+[方法会欺骗一个Java证书，并交付一个基于metasploit的有效负载。使用由Thomas Werth创建的自定义java applet来交付负载。]\n
+The """ + bcolors.BOLD + """Metasploit Browser Exploit""" + bcolors.ENDC + """ method will utilize select Metasploit browser exploits through an iframe and deliver a Metasploit payload.\n
+[方法将通过iframe利用select Metasploit浏览器，并交付Metasploit有效负载。]\n
+The """ + bcolors.BOLD + """Credential Harvester""" + bcolors.ENDC + """ method will utilize web cloning of a web- site that has a username and password field and harvest all the information posted to the website.\n
+[方法将利用具有用户名和密码字段的网站的web克隆，并获取发布到网站的所有信息。]\n
+The """ + bcolors.BOLD + """TabNabbing""" + bcolors.ENDC + """ method will wait for a user to move to a different tab, then refresh the page to something different.\n
+[方法将等待用户移动到不同的选项卡，然后刷新页面到不同的地方。]\n
+The """ + bcolors.BOLD + """Web-Jacking Attack""" + bcolors.ENDC + """ method was introduced by white_sheep, emgent. This method utilizes iframe replacements to make the highlighted URL link to appear legitimate however when clicked a window pops up then is replaced with the malicious link. You can edit the link replacement settings in the set_config if its too slow/fast.\n
+[此方法使用iframe替换使突出显示的URL链接显示为合法，但是当单击一个窗口时弹出的链接将被恶意链接替换。如果速度太慢/太快，可以在set_config中编辑链接替换设置。]\n
+The """ + bcolors.BOLD + """Multi-Attack""" + bcolors.ENDC + """ method will add a combination of attacks through the web attack menu. For example you can utilize the Java Applet, Metasploit Browser, Credential Harvester/Tabnabbing all at once to see which is successful.\n
+[方法将通过web攻击菜单添加攻击组合。例如，您可以同时使用Java Applet、Metasploit浏览器、凭证收割机/Tabnabbing来查看哪个是成功的。]\n
+The """ + bcolors.BOLD + """HTA Attack""" + bcolors.ENDC + """ method will allow you to clone a site and perform powershell injection through HTA files which can be used for Windows-based powershell exploitation through the browser.\n
+[方法将允许您克隆一个站点，并通过HTA文件执行powershell注入，HTA文件可用于通过浏览器进行基于windows的powershell开发。]\n
 """)
 
 webattack_vectors_menu = ['Web Templates[WEB 模板]',
-                          'Site Cloner[现场切割]',
+                          'Site Cloner[站点克隆]',
                           'Custom Import\n[自定义导入]\n',
                           ]
 
